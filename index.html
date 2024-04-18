@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notely</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Roboto-Medium.ttf">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Roboto-Regular.ttf">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/Roboto-Semibold.ttf">
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="search">
+        <img class="search-icon" src="assets/icons/search-icon.svg">
+        <p class="search-text">Search</p>
+      </div>
+      <button class="add-btn" type="button">
+        <img class="add-icon" src="assets/icons/add-icon.svg">
+        <p>Add</p>
+      </button>
+    </div>
+    <div class="bottom-container">
+      <div class="dialog-add-note">
+        <form class="task-form hidden" id="task-form">
+          <div class="task-form-header">
+            <p class="add-note-text">Add note</p>
+            <img src="assets/icons/close-icon.svg">
+          </div>
+          <div class="title-category">
+            <div class="title-box">
+              <label class="task-form-label" for="title-input">Title</label>
+              <input class="title-input" type="text" id="title-input" required placeholder="Add title">
+            </div>
+            <div class="title-box">
+              <label class="task-form-label" for="category-input">Category</label>
+              <select for="category-input">
+                <option value="personal" selected>Personal</option>
+                <option value="home">Home</option>
+                <option value="business">Business</option>
+              </select>
+            </div>
+          </div>
+          <div class="description-header">
+            <div style="display: flex;">
+              <label class="task-form-label" for="description-input">Description</label>
+              <p class="optional">(optional)</p>
+            </div>
+            <p class="optional">0/200</p>
+          </div>
+          <textarea id="description-input" rows="5" cols="70" placeholder="Add description"></textarea>
+          <div class="bottom-btn">
+            <button class="add-btn clear-btn" type="button">Clear</button>
+            <button class="add-btn add-btn2" type="button">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>
